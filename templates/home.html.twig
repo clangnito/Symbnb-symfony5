@@ -1,0 +1,202 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Bienvenue
+{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <div class="jumbotron mt-3">
+      <h1 class="display-3">
+        Bienvenue sur SymBNB !
+      </h1>
+      <p class="lead">
+        Nous mettons en relations les voyageurs et les propriétaires qui veulent
+        profiter d'opportunités et gagner de l'argent en proposant leur bien à
+        la location !
+      </p>
+      <hr class="my-4" />
+      <p>
+        Vous êtes voyageur ? Et vous voulez voir où vous pourrez loger pour
+        votre prochain déplacement ?.
+      </p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">
+          vois nos annonces
+        </a>
+      </p>
+    </div>
+
+    <h2 class="h1 my-5">
+      Nos appartements stars
+    </h2>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card bg-light mb-3">
+          <div class="card-header text-center">
+            4 chambres, <strong>152,00€ / nuit</strong> <br />
+
+            <span class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+
+          <a href="/ads/odio-magnam-aut-et-soluta-totam-omnis">
+            <img src="https://picsum.photos/1200/350?random=55000"
+              alt="Image de l'appartement"
+              style="height: 200px; width: 100%; display: block" />
+          </a>
+
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="/ads/odio-magnam-aut-et-soluta-totam-omnis">
+                Odio magnam aut et soluta totam omnis.
+              </a>
+            </h4>
+            <p class="card-text">
+              Dolore cupiditate quod nihil vitae nihil quisquam excepturi
+              corporis. Et aut cum nam et doloremque necessitatibus quis.
+              Veritatis eaque facere dolorum quis architecto blanditiis ea
+              molestiae.
+            </p>
+            <a href="/ads/odio-magnam-aut-et-soluta-totam-omnis"
+              class="btn btn-primary float-right">
+              En savoir plus !
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-light mb-3">
+          <div class="card-header text-center">
+            1 chambres, <strong>191,00€ / nuit</strong> <br />
+
+            <span class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+          </div>
+
+          <a href="/ads/ipsam-ratione-maiores-tempore-id-sit">
+            <img src="https://picsum.photos/1200/350?random=30959"
+              alt="Image de l'appartement"
+              style="height: 200px; width: 100%; display: block" />
+          </a>
+
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="/ads/ipsam-ratione-maiores-tempore-id-sit">
+                Ipsam ratione maiores tempore id sit.
+              </a>
+            </h4>
+            <p class="card-text">
+              Itaque voluptatem corporis exercitationem ipsum eos voluptatem
+              provident. Nulla neque similique quidem quae sit nostrum suscipit.
+            </p>
+            <a href="/ads/ipsam-ratione-maiores-tempore-id-sit"
+              class="btn btn-primary float-right">
+              En savoir plus !
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-light mb-3">
+          <div class="card-header text-center">
+            3 chambres, <strong>50,00€ / nuit</strong> <br />
+
+            <span class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+          </div>
+
+          <a href="/ads/excepturi-adipisci-porro-provident-doloremque-corporis-iusto">
+            <img src="https://picsum.photos/1200/350?random=10393"
+              alt="Image de l'appartement"
+              style="height: 200px; width: 100%; display: block" />
+          </a>
+
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="/ads/excepturi-adipisci-porro-provident-doloremque-corporis-iusto">
+                Excepturi adipisci porro provident doloremque corporis iusto.
+              </a>
+            </h4>
+            <p class="card-text">
+              Est autem aspernatur nihil molestiae voluptas qui porro maiores.
+              Corrupti eos iure debitis nisi fuga natus consectetur.
+            </p>
+            <a href="/ads/excepturi-adipisci-porro-provident-doloremque-corporis-iusto"
+              class="btn btn-primary float-right">
+              En savoir plus !
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="h1 my-5">
+      Nos propriétaires stars !
+    </h2>
+
+    <div class="row">
+      <div class="col">
+        <div class="card border-secondary mb-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              Marie Antoine
+            </h4>
+
+            <hr />
+
+            <div class="card-text">
+              <img src="https://randomuser.me/api/portraits/women/38.jpg"
+                alt="Avatar de Marie Antoine"
+                class="float-left mr-3" />
+              <p>
+                Et sapiente quos consequatur dicta quae nam.
+              </p>
+              <a href="/user/marie-antoine" class="btn btn-success float-right">
+                En savoir plus!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-secondary mb-3">
+          <div class="card-body">
+            <h4 class="card-title">
+              Sabine Klein
+            </h4>
+
+            <hr />
+
+            <div class="card-text">
+              <img src="https://randomuser.me/api/portraits/women/3.jpg"
+                alt="Avatar de Sabine Klein"
+                class="float-left mr-3" />
+              <p>
+                Alias voluptas ut sunt dolore sed voluptates est recusandae.
+              </p>
+              <a href="/user/sabine-klein" class="btn btn-success float-right">
+                En savoir plus!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
