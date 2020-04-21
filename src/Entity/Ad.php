@@ -54,7 +54,7 @@ class Ad
      * @ORM\Column(type="text")
      * @Assert\Length(min=100, minMessage="Votre description ne peut pas faire moins de 100 caractères")
      */
-    private $content;
+    private $contents;
 
    /**
      * @ORM\Column(type="string", length=255)
@@ -72,6 +72,12 @@ class Ad
      * @Assert\Valid()
      */
     private $images;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="ads")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $author;
 
     public function __construct()
     {
@@ -146,14 +152,14 @@ class Ad
         return $this;
     }
 
-    public function getContent(): ?string
+    public function getContents(): ?string
     {
-        return $this->content;
+        return $this->contents;
     }
 
-    public function setContent(string $content): self
+    public function setContents(string $contents): self
     {
-        $this->content = $content;
+        $this->contents = $contents;
 
         return $this;
     }
@@ -209,6 +215,18 @@ class Ad
                 $image->setAd(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getAuthor(): ?User
+    {
+        return $this->author;
+    }
+
+    public function setAuthor(?User $author): self
+    {
+        $this->author = $author;
 
         return $this;
     }

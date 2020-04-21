@@ -15,7 +15,7 @@ class HomeController extends AbstractController {
      */
     public function home(){
         return $this->render('home.html.twig',
-         ['title' => "DOZ"]
+         ['title' => "Home page"]
         );
     }
 }
