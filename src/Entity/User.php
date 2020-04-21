@@ -246,9 +246,9 @@ class User implements UserInterface
     }
 
     public function getRoles() {
-        // $roles = $this->userRoles->map(function($role){
-        //     return $role->getTitle();
-        // })->toArray();
+        $roles = $this->userRoles->map(function($role){
+            return $role->getTitle();
+        })->toArray();
 
         $roles[] = 'ROLE_USER';
 
